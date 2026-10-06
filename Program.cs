@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            const string id = "12345678";
+            Console.WriteLine(Add(id[0] - '0', id[^1] - '0'));
+        }
+
+        static int Add(int x, int y)
+        {
+            return x + y;
         }
     }
 }
