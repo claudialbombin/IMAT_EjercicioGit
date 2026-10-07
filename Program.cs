@@ -26,6 +26,7 @@
 
         static int Divide(int x, int y)
         {
+            if (y == 0) { Console.WriteLine("Error. No se puede dividir por cero."); return 0; }
             return x / y;
         }
     }
